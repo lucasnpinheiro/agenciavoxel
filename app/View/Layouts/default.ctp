@@ -58,7 +58,7 @@
                             ?>
                             <div class="menu-item">
                                 <span id="active" class="icon fa fa-rss"></span>
-                                <a id="hover" class="text" href="<?php echo $this->Html->url('rss.xml'); ?>"><i class="fa fa-rss"></i></a>
+                                <a id="hover" class="text" href="<?php echo $this->Html->url('/rss.xml'); ?>"><i class="fa fa-rss"></i></a>
                             </div><!-- Menu Item -->
 
                         </div><!-- Menu Wrap -->
@@ -111,22 +111,22 @@
                     ?>
                     <div class="row menutopo">
                         <div id="" class="col-xs-2 col-md-2 itemmenu">
-                            <?php echo $this->Html->link('<i class="fa fa-globe"></i> <div class="row"> Empresa </div>', '/', array('escape' => FALSE)) ?>
+                            <?php echo $this->Html->link('<i class="fa fa-globe"></i> <div class="row"> Empresa </div>', '/#empresa', array('escape' => FALSE)) ?>
                         </div>
                         <div id="" class="col-xs-2 col-md-2 itemmenu">
-                            <?php echo $this->Html->link('<i class="fa fa-cogs"></i> <div class="row"> Serviços </div>', '/', array('escape' => FALSE)) ?>
+                            <?php echo $this->Html->link('<i class="fa fa-cogs"></i> <div class="row"> Serviços </div>', '/#servico', array('escape' => FALSE)) ?>
                         </div>
                         <div id="" class="col-xs-2 col-md-2 itemmenu">
-                            <?php echo $this->Html->link('<i class="fa fa-file-text-o"></i> <div class="row"> Cases </div>', '/', array('escape' => FALSE)) ?>
+                            <?php echo $this->Html->link('<i class="fa fa-file-text-o"></i> <div class="row"> Cases </div>', '/#cases', array('escape' => FALSE)) ?>
                         </div>
                         <div id="" class="col-xs-2 col-md-2 itemmenu">
-                            <?php echo $this->Html->link('<i class="fa fa-folder-open-o"></i> <div class="row"> Clientes </div>', '/', array('escape' => FALSE)) ?>
+                            <?php echo $this->Html->link('<i class="fa fa-folder-open-o"></i> <div class="row"> Clientes </div>', '/#clientes', array('escape' => FALSE)) ?>
                         </div>
                         <div id="" class="col-xs-2 col-md-2 itemmenu">
-                            <?php echo $this->Html->link('<i class="fa fa-comments"></i> <div class="row"> Blog </div>', '/', array('escape' => FALSE)) ?>
+                            <?php echo $this->Html->link('<i class="fa fa-comments"></i> <div class="row"> Blog </div>', '/#blog', array('escape' => FALSE)) ?>
                         </div>
                         <div id="" class="col-xs-2 col-md-2 itemmenu">
-                            <?php echo $this->Html->link('<i class="fa fa-phone"></i> <div class="row"> Contato </div>', '/', array('escape' => FALSE)) ?>
+                            <?php echo $this->Html->link('<i class="fa fa-phone"></i> <div class="row"> Contato </div>', '/#contato', array('escape' => FALSE)) ?>
                         </div>
                     </div>
                     <?php
@@ -184,21 +184,18 @@
                         Todos os direitos reservados - Agência Voxel
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-3">
+                <div class="col-xs-12 col-md-5">
                 </div>
-                <div class="col-xs-12 col-md-5 rodape-direito">
+                <div class="col-xs-12 col-md-3 rodape-direito">
                     <div class="row menu-rodape">
-                        <div class="col-xs-3 col-md-3">
+                        <div class="col-xs-3 col-md-4">
                             <?php echo $this->Html->link('Infraestrutura', '/infraestrutura'); ?>
                         </div>
-                        <div class="col-xs-3 col-md-3">
-                            <?php echo $this->Html->link('Depoimentos', '/depoimentos'); ?>
+                        <div class="col-xs-3 col-md-4">
+                            <?php echo $this->Html->link('Serviços', '/servicos'); ?>
                         </div>
-                        <div class="col-xs-3 col-md-3">
+                        <div class="col-xs-3 col-md-4">
                             <?php echo $this->Html->link('Políticas', '/politicas'); ?>
-                        </div>
-                        <div class="col-xs-3 col-md-3" style="border:none;">
-                            <?php echo $this->Html->link('Suporte', '/suporte'); ?>
                         </div>
                     </div>
                     <div class="row">
@@ -239,7 +236,7 @@
                                 ?>
                                 <div class="menu-item">
                                     <span id="active" class="icon fa fa-rss"></span>
-                                    <a id="hover" class="text" href="<?php echo $this->Html->url('rss.xml'); ?>"><i class="fa fa-rss"></i></a>
+                                    <a id="hover" class="text" href="<?php echo $this->Html->url('/rss.xml'); ?>"><i class="fa fa-rss"></i></a>
                                 </div><!-- Menu Item -->
 
                             </div><!-- Menu Wrap -->

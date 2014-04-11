@@ -4,6 +4,13 @@
     font-weight: 400;
     src: local('Lato Regular'), local('Lato-Regular'), url(../fonts/lato.woff) format('woff');
 }
+a {
+    color: #ddd;
+}
+a:hover {
+    text-decoration: none;
+}
+
 body{
     margin: 0px;
     padding: 0px;
@@ -129,6 +136,7 @@ svg image:hover, svg image:focus {
     font-weight: bold;
     margin-bottom: 15px;
 }
+
 .logotopo {
     padding: 40px;
 }
@@ -152,8 +160,8 @@ svg image:hover, svg image:focus {
     text-align: left;
 }
 .menu-rodape div {
-    border-right: solid 1px #fff;
-    text-align: center;
+    /*border-right: solid 1px #fff;*/
+    text-align: right;
 }
 .menu-rodape:last-child {
     border: none;
@@ -190,6 +198,10 @@ svg image:hover, svg image:focus {
 }
 .carousel-control.right, .carousel-control.left{
     background: transparent;
+}
+.menutopo a{
+    color: #979797;
+    text-decoration: none;
 }
 .menutopo .itemmenu {
     text-align: center;
@@ -417,6 +429,13 @@ span.active {
     padding: 6px 5px 5px 3px;
     font-size: 20px;
     text-align: center;
+}
+
+.rodape #container #menu-wrap .menu-item span{
+    background: none repeat scroll 0% 0% rgba(80, 80, 80, 1);
+}
+.rodape #container #menu-wrap .menu-item {
+    margin-left: 7px;
 }
 
 @media (max-width: 768px) { 
