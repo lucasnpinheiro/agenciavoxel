@@ -2,24 +2,23 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Agência Voxel</title>
+        <meta name="description" content="<?php echo Configure::read('Config.Titulo'); ?>">
+        <meta name="keywords" content="<?php echo Configure::read('Config.Titulo'); ?>">
+        <meta name="author" content="<?php echo Configure::read('Config.Titulo'); ?>">
+        <title><?php echo Configure::read('Config.Titulo'); ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Agência Voxel">
         <?php echo $this->Html->css('/css/bootstrap.min.css'); ?>
         <?php echo $this->Html->css('/css/font-awesome.min.css'); ?>
         <?php echo $this->Html->css('/css/agenciavoxel.css'); ?>
         <?php echo $this->fetch('meta_tag'); ?>
     </head>
     <body>
-
         <div class="row topo">
             <div class="container">
                 <div class="col-xs-7 col-md-4 logotopo">
-                    <?php echo $this->Html->image('/img/logo.png'); ?>
+                    <a href="<?php $this->Html->url('/', true); ?>"><?php echo $this->Html->image('/img/logo.png'); ?></a>
                 </div>
-                <div class="col-xs-1 col-md-4">
-
-                </div>
+                <div class="col-xs-1 col-md-4"></div>
                 <div class="col-xs-4 col-md-4 socialtopo">
                     <section id="container" class="visible-md visible-lg">
                         <!-- Style 2 -->
@@ -28,7 +27,7 @@
                                 ?>
                                 <div class="menu-item">
                                     <span id="active" class="icon fa fa-facebook"></span>
-                                    <a id="hover" class="text" href="<?php echo Configure::read('Social.LinkFacebook'); ?>"><i class="fa fa-facebook"></i></a>
+                                    <a id="hover" class="text" target="_blank" href="<?php echo Configure::read('Social.LinkFacebook'); ?>"><i class="fa fa-facebook"></i></a>
                                 </div><!-- Menu Item -->
                             <?php }
                             ?>
@@ -36,7 +35,7 @@
                                 ?>
                                 <div class="menu-item">
                                     <span id="active" class="icon fa fa-twitter"></span>
-                                    <a id="hover" class="text" href="<?php echo Configure::read('Social.LinkTwitter'); ?>"><i class="fa fa-twitter"></i></a>
+                                    <a id="hover" class="text" target="_blank" href="<?php echo Configure::read('Social.LinkTwitter'); ?>"><i class="fa fa-twitter"></i></a>
                                 </div><!-- Menu Item -->
                             <?php }
                             ?>
@@ -44,7 +43,7 @@
                                 ?>
                                 <div class="menu-item">
                                     <span id="active" class="icon fa fa-pinterest"></span>
-                                    <a id="hover" class="text" href="<?php echo Configure::read('Social.LinkPinterest'); ?>"><i class="fa fa-pinterest"></i></a>
+                                    <a id="hover" class="text" target="_blank" href="<?php echo Configure::read('Social.LinkPinterest'); ?>"><i class="fa fa-pinterest"></i></a>
                                 </div><!-- Menu Item -->
                             <?php }
                             ?>
@@ -52,13 +51,13 @@
                                 ?>
                                 <div class="menu-item">
                                     <span id="active" class="icon fa fa-google-plus"></span>
-                                    <a id="hover" class="text" href="<?php echo Configure::read('Social.LinkGooglePlus'); ?>"><i class="fa fa-google-plus"></i></a>
+                                    <a id="hover" class="text" target="_blank" href="<?php echo Configure::read('Social.LinkGooglePlus'); ?>"><i class="fa fa-google-plus"></i></a>
                                 </div><!-- Menu Item -->
                             <?php }
                             ?>
                             <div class="menu-item">
                                 <span id="active" class="icon fa fa-rss"></span>
-                                <a id="hover" class="text" href="<?php echo $this->Html->url('/rss.xml'); ?>"><i class="fa fa-rss"></i></a>
+                                <a id="hover" class="text" target="_blank" href="<?php echo $this->Html->url('/rss.xml'); ?>"><i class="fa fa-rss"></i></a>
                             </div><!-- Menu Item -->
 
                         </div><!-- Menu Wrap -->
@@ -206,7 +205,7 @@
                                     ?>
                                     <div class="menu-item">
                                         <span id="active" class="icon fa fa-facebook"></span>
-                                        <a id="hover" class="text" href="<?php echo Configure::read('Social.LinkFacebook'); ?>"><i class="fa fa-facebook"></i></a>
+                                        <a id="hover" class="text" target="_blank" href="<?php echo Configure::read('Social.LinkFacebook'); ?>"><i class="fa fa-facebook"></i></a>
                                     </div><!-- Menu Item -->
                                 <?php }
                                 ?>
@@ -214,7 +213,7 @@
                                     ?>
                                     <div class="menu-item">
                                         <span id="active" class="icon fa fa-twitter"></span>
-                                        <a id="hover" class="text" href="<?php echo Configure::read('Social.LinkTwitter'); ?>"><i class="fa fa-twitter"></i></a>
+                                        <a id="hover" class="text" target="_blank" href="<?php echo Configure::read('Social.LinkTwitter'); ?>"><i class="fa fa-twitter"></i></a>
                                     </div><!-- Menu Item -->
                                 <?php }
                                 ?>
@@ -222,7 +221,7 @@
                                     ?>
                                     <div class="menu-item">
                                         <span id="active" class="icon fa fa-pinterest"></span>
-                                        <a id="hover" class="text" href="<?php echo Configure::read('Social.LinkPinterest'); ?>"><i class="fa fa-pinterest"></i></a>
+                                        <a id="hover" class="text" target="_blank" href="<?php echo Configure::read('Social.LinkPinterest'); ?>"><i class="fa fa-pinterest"></i></a>
                                     </div><!-- Menu Item -->
                                 <?php }
                                 ?>
@@ -230,13 +229,13 @@
                                     ?>
                                     <div class="menu-item">
                                         <span id="active" class="icon fa fa-google-plus"></span>
-                                        <a id="hover" class="text" href="<?php echo Configure::read('Social.LinkGooglePlus'); ?>"><i class="fa fa-google-plus"></i></a>
+                                        <a id="hover" class="text" target="_blank" href="<?php echo Configure::read('Social.LinkGooglePlus'); ?>"><i class="fa fa-google-plus"></i></a>
                                     </div><!-- Menu Item -->
                                 <?php }
                                 ?>
                                 <div class="menu-item">
                                     <span id="active" class="icon fa fa-rss"></span>
-                                    <a id="hover" class="text" href="<?php echo $this->Html->url('/rss.xml'); ?>"><i class="fa fa-rss"></i></a>
+                                    <a id="hover" class="text" target="_blank" href="<?php echo $this->Html->url('/rss.xml'); ?>"><i class="fa fa-rss"></i></a>
                                 </div><!-- Menu Item -->
 
                             </div><!-- Menu Wrap -->
