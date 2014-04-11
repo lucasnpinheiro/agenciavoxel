@@ -16,7 +16,7 @@
         <div class="row topo">
             <div class="container">
                 <div class="col-xs-7 col-md-4 logotopo">
-                    <a href="<?php $this->Html->url('/', true); ?>"><?php echo $this->Html->image('/img/logo.png'); ?></a>
+                    <?php echo $this->Html->link($this->Html->image('/img/logo.png'), '/', array('escape' => FALSE)); ?>
                 </div>
                 <div class="col-xs-1 col-md-4"></div>
                 <div class="col-xs-4 col-md-4 socialtopo">
